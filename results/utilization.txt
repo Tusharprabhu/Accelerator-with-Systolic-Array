@@ -1,0 +1,10 @@
+======================================================================
+  Utilization Report - Systolic Array Accelerator
+======================================================================
+
+  total_pes: 16
+  pipeline_depth: 7
+  active_pe_cycles: 44
+  max_pe_cycles: 112
+  utilization_pct: 39.285714285714285
+  peak_throughput_macs_per_cycle: 16

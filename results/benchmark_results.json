@@ -1,0 +1,114 @@
+{
+  "config": {
+    "array_size": 4,
+    "data_width": 8,
+    "clock_freq_mhz": 100.0,
+    "peak_gops": 3.2
+  },
+  "results": [
+    {
+      "matrix_size": 4,
+      "method": "Python (naive)",
+      "time_seconds": 5.353333333332766e-05,
+      "total_ops": 128,
+      "gops": 0.0023910336239105897,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 4,
+      "method": "NumPy (optimized)",
+      "time_seconds": 1.3900000000011126e-06,
+      "total_ops": 128,
+      "gops": 0.09208633093517808,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 4,
+      "method": "FPGA Systolic (4x4 @ 100.0MHz)",
+      "time_seconds": 6.3e-07,
+      "total_ops": 128,
+      "gops": 0.20317460317460317,
+      "latency_cycles": 63
+    },
+    {
+      "matrix_size": 8,
+      "method": "Python (naive)",
+      "time_seconds": 0.00040253333333333435,
+      "total_ops": 1024,
+      "gops": 0.0025438887048691555,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 8,
+      "method": "NumPy (optimized)",
+      "time_seconds": 1.7200000000078264e-06,
+      "total_ops": 1024,
+      "gops": 0.5953488372065934,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 8,
+      "method": "FPGA Systolic (4x4 @ 100.0MHz)",
+      "time_seconds": 5.05e-06,
+      "total_ops": 1024,
+      "gops": 0.20277227722772276,
+      "latency_cycles": 505
+    },
+    {
+      "matrix_size": 16,
+      "method": "Python (naive)",
+      "time_seconds": 0.0032362999999999884,
+      "total_ops": 8192,
+      "gops": 0.0025312857275283595,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 16,
+      "method": "NumPy (optimized)",
+      "time_seconds": 4.7699999999983865e-06,
+      "total_ops": 8192,
+      "gops": 1.7174004192877927,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 16,
+      "method": "FPGA Systolic (4x4 @ 100.0MHz)",
+      "time_seconds": 4.0470000000000004e-05,
+      "total_ops": 8192,
+      "gops": 0.20242154682480848,
+      "latency_cycles": 4047
+    },
+    {
+      "matrix_size": 32,
+      "method": "Python (naive)",
+      "time_seconds": 0.0258863,
+      "total_ops": 65536,
+      "gops": 0.0025316866450593553,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 32,
+      "method": "NumPy (optimized)",
+      "time_seconds": 3.442000000000722e-05,
+      "total_ops": 65536,
+      "gops": 1.9040092969199955,
+      "latency_cycles": 0
+    },
+    {
+      "matrix_size": 32,
+      "method": "FPGA Systolic (4x4 @ 100.0MHz)",
+      "time_seconds": 0.00032383,
+      "total_ops": 65536,
+      "gops": 0.202377790816169,
+      "latency_cycles": 32383
+    }
+  ],
+  "utilization": {
+    "total_pes": 16,
+    "pipeline_depth": 7,
+    "active_pe_cycles": 44,
+    "max_pe_cycles": 112,
+    "utilization_pct": 39.285714285714285,
+    "peak_throughput_macs_per_cycle": 16
+  }
+}

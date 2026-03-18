@@ -1,0 +1,24 @@
+======================================================================
+  Throughput Report - Systolic Array Accelerator
+======================================================================
+
+FPGA Configuration:
+  Array Size:  4x4
+  Clock Freq:  100.0 MHz
+  Data Width:  INT8
+  Peak GOPS:   3.200
+
+Method                                Size         GOPS        Time (s)
+----------------------------------------------------------------------
+Python (naive)                         4x4     0.002391     0.000053533
+NumPy (optimized)                      4x4     0.092086     0.000001390
+FPGA Systolic (4x4 @ 100.0MHz)         4x4     0.203175     0.000000630
+Python (naive)                         8x8     0.002544     0.000402533
+NumPy (optimized)                      8x8     0.595349     0.000001720
+FPGA Systolic (4x4 @ 100.0MHz)         8x8     0.202772     0.000005050
+Python (naive)                        16x16     0.002531     0.003236300
+NumPy (optimized)                     16x16     1.717400     0.000004770
+FPGA Systolic (4x4 @ 100.0MHz)        16x16     0.202422     0.000040470
+Python (naive)                        32x32     0.002532     0.025886300
+NumPy (optimized)                     32x32     1.904009     0.000034420
+FPGA Systolic (4x4 @ 100.0MHz)        32x32     0.202378     0.000323830
