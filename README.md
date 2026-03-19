@@ -50,7 +50,3 @@ For these sizes, naive Python reports ~0.00253 GOPS, which is about **80x slower
 | `results/throughput.txt` | Throughput report |
 | `results/utilization.txt` | Utilization report |
 | `results/benchmark_results.json` | Machine-readable summary |
-
-## License
-
-MIT License. See LICENSE for details.
